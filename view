@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the School Portal</h1>
+    </header>
+
+    <main>
+        <section id="results">
+            <h2>Results</h2>
+            <div id="results-container">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+
+        <section id="upload-books">
+            <h2>Upload PDF Books</h2>
+            <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="book" accept=".pdf" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>School Portal &copy; 2025</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
